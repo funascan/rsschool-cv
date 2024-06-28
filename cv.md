@@ -44,6 +44,23 @@ Design and debugging of electronics for the spectrometer. Development and debugg
 ### Profile:
 I am a hardware development and verification engeneer with over 5 years of experience. My achievements include complete  hardware and software development of spectrometer electronics, electronics  development for peristaltic pump and many more. Currently, I'm working as a unit verification engineer and learning frontend technologies in RS School.
 
+### Code example:
+```
+module blink(
+  input clk, 
+  output led
+);
+
+  logic [31:0] cnt;
+
+  always_ff @(posedge clk)
+  begin
+    cnt <= cnt + 1'b1;
+    led <= cnt[31];
+  end
+endmodule
+```
+
 ### Languages
 * Russian (Native)
 * English (B1)
