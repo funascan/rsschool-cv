@@ -35,3 +35,6 @@ Embedded developer
 2020-2021
 * **Jena Optoelectronics GmbH**
 Hardware developer
+
+### Profile:
+I am a hardware development and verification engeneer with over 5 years of experience. My achievements include complete  hardware and software development of spectrometer electronics, electronics  development for peristaltic pump and many more. Currently, I'm working as a unit verification engineer and learning frontend technologies in RS School.
