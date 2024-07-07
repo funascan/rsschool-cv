@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="cv">
+        <section class="left_sec">
+            <header> 
+                <figure class="photo">
+                    <img src="img/Me.png" alt="There was supposed to be a picture of me">
+                </figure>
+            </header>
+            <h2>INFO</h2>
+            <article> 
+                <h3>Contact</h3>
+                <ul>
+                    <li>Location: Zhodino, Belarus</li>
+                    <li>Phone: +375 (29) 632-12-96</li>
+                    <li>Email: bulavskyva@gmail.com</li>
+                    <li>Telegram: <a href="https://t.me/Rhtbr">@Rhtbr</a></li>
+                </ul>
+                <h3>Skills</h3>
+                <ul> 
+                    <li>SystemVerilog</li>
+                    <li>UVM</li>
+                    <li>Make</li>
+                    <li>Git</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>VCL</li>
+                </ul>
+                <h3>Work examples</h3>
+                <ul>
+                    <li>To be added</li>
+                </ul>
+            </article>
+            <footer class="rs_logo">
+                <img src="img/rs-school-logo.svg" height="65" width="1000" alt="rs-school-logo">
+            </footer>
+        </section>
+        <section class="right_sec">
+            <h1>Valiantsin Bulauski</h1>
+            <h4>RTL verification engeneer</h4>
+            <div class="underline"></div>
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <b>Belarusian State University</b><br>
+                    Physics faculty<br>
+                    <i>2013-2019</i>
+                </li>
+            </ul>
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <b>EssentOptics Ltd</b><br>
+                    Apprentice<br>
+                    Participated in the instrument assembly and calibration process.<br>
+                    <i>2013-2019</i><br><br>
+                </li>
+                <li>
+                    <b>VM-TIM GmbH</b><br>
+                    Embedded developer<br>
+                    Firmware development for microcontrollers(stm32). Component selection for stepper motor drivers.<br>
+                    <i>2020-2021</i><br><br>
+                </li>
+                <li>
+                    <b>Jena Optoelectronics GmbH</b><br>
+                    Hardware developer<br>
+                    Design and debugging of electronics for the spectrometer. Development and debugging of software and dll libraries for electronics. Develop code for FPGA(Intel/Altera).<br>
+                    <i>2021-2024</i>
+                </li>
+            </ul>
+            <h2>Profile</h2>
+            I am a hardware development and verification engeneer with over 5 years of experience. My achievements include complete  hardware and software development of spectrometer electronics, electronics  development for peristaltic pump and many more. Currently, I'm working as a unit verification engineer and learning frontend technologies in RS School.
+            <h2>Code example</h2>
+            <code data-language = "SystemVerilog">
+                module blink(<br>
+                &ensp;&ensp;input clk, <br>
+                &ensp;&ensp;output led<br>
+                );<br>
+                <br>                   
+                &ensp;&ensp;logic [31:0] cnt;<br>
+                  <br>
+                &ensp;&ensp;always_ff @(posedge clk)<br>
+                &ensp;&ensp;begin<br>
+                &ensp;&ensp;&ensp;&ensp;cnt &lt;= cnt + 1'b1;<br>
+                &ensp;&ensp;&ensp;&ensp;led &lt;= cnt[31];<br>
+                &ensp;&ensp;end<br>
+                endmodule<br>
+            </code>
+            <h2>Languages</h2>
+            <ul>
+                <li>Russian (Native)</li>
+                <li>English (B1)</li>
+            </ul>
+            <footer>
+              <nav>
+                <ul class="footer_list">
+                  <li class="git-link">
+                    <a href="https://github.com/funascan"> <i class="fab fa-github"></i></a>
+                  </li>
+                  <li class="course-link">
+                    <a href="https://t.me/Rhtbr"><i class="fab fa-telegram"></i></a>
+                  </li>
+                  <li class="course-link">
+                    <a href="https://rs.school/courses/javascript-preschool-ru"><i class="fab fa-js"></i></a>
+                  </li>
+                  <li>
+                    <span class="year-font">2024</span>
+                  </li>
+                </ul>
+              </nav>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>
